@@ -1,4 +1,4 @@
-Resume materi GIT
+                       (2)_Version Control and Branch Management (Git)
 
 1. Git merupakan sebuah platform virtual control sistem yang populer digunakan oleh
    developer atau progamer yang bekerja secara individu ataupun secara team dan juga free tidak berbayar 
