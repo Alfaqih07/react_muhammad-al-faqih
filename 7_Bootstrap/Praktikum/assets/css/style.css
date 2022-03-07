@@ -21,18 +21,19 @@
 
 .footer {
 	background-color: black;
-	/*padding-left: 100px;*/
 } 
 .read{
 	color:grey;
 }
-.nc{
+/* .nc{
 	color: black;
-} 
+}  */
 .section{
 	color: white;
 } 
 .cr{
 	text-align: center;
 	padding-bottom: 25px;
+	background-color: white;
+	padding-top:25px;
 }
