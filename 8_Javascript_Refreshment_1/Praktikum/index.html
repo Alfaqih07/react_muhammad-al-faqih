@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 5; 
+        let b = "Kampus Merdeka"; 
+        let a1 = b;
+        const nama = "budi";
+        let terdaftar = false; 
+        let lengkap_arr = [a, b, nama, terdaftar];
+        // console.log(nama);
+        function perkenalan (){
+            let asal = "indonesia";
+            return console.log(
+                "perkenalkan nama saya" +
+                nama +
+                "nomor urut" +
+                a +
+                "sekarang sedang mengikuti" + 
+                b + 
+                "berasal dari " +
+                asal
+            ); 
+        } 
+        perkenalan() 
+
+        console.log("a adalah =" + a1);
+        console.log("b adalah =" + b);
+
+        if (a === 5) {
+            console.log(nama+" "+"terdaftar sebagai kegiatan kampus merdeka");
+        }
+
+// console.log("asal diakses =" + asal);
+
+    </script>
+</body>
+</html>

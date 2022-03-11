@@ -1,11 +1,10 @@
- var a = 5; 
+var a = 5; 
 let b = "Kampus Merdeka"; 
+let a1 = b;
 const nama = "budi";
 let terdaftar = false; 
 let lengkap_arr = [a, b, nama, terdaftar];
-
-console.log (nama);
-
+// console.log(nama);
 function perkenalan (){
     let asal = "indonesia";
     return console.log(
@@ -18,15 +17,12 @@ function perkenalan (){
         "berasal dari " +
         asal
     ); 
-}
+} 
+perkenalan() 
 
-if(terdaftar === true) {
-    console.log(nama+"terdaftar sebagai kegiatan kampus merdeka");
-}
-
-a = b;
-nama = b;
- 
-console.log("asal diakses =" + asal);
-console.log("a adalah =" + a);
+console.log("a adalah =" + a1);
 console.log("b adalah =" + b);
+
+if (a === 5) {
+    console.log(nama+" "+"terdaftar sebagai kegiatan kampus merdeka");
+}
