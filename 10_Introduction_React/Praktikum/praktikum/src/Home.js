@@ -18,7 +18,7 @@ function Home (){
                             <div class="col-lg-3 col-md-3 col-sm-3 text-md-center text-sm-center text-lg-right"><a href="index.html" class="aktif">HOME</a></div>
                             <div class="col-lg-3 col-md-3 col-sm-3 text-md-center text-sm-center text-lg-center"><a href="about.html">ABOUT</a></div>
                             <div class="col-lg-3 col-md-3 col-sm-3 text-md-center text-sm-center text-lg-left"><a href="#">EXPERIENCE</a></div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 text-md-center text-sm-center text-lg-right"><a href='./Contact_Us'>CONTACT</a></div> 
+                            <div class="col-lg-3 col-md-3 col-sm-3 text-md-center text-sm-center text-lg-right"> <Link to="/Contact_Us">Contact</Link></div>
                         </div>
                 </div>    
             </div>
