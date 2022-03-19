@@ -10,7 +10,6 @@ export default function Sidebar (){
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/About_app">About App</Link></li>
                 <li><Link to="/About_author">About Author</Link></li>
-
             </ul>
         </div>
         </>
