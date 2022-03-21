@@ -1,15 +1,16 @@
 import Todoapp from './pages/Todoapp'; 
 import {dataUser} from "./dataApp" 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Latihan from './Latihan';
 
 
 
-function App() {
+function App(props) {
   return (
     <> 
     {/* <Todoapp users={dataUser}/> */}
 
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}/> 
           <Route index element={<Home />} />
@@ -17,7 +18,9 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */} 
+
+    <Latihan Ulangtahun="Faqih" tahun="2022"/>
     
     </>
   );
