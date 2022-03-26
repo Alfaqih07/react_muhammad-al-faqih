@@ -6,7 +6,6 @@ import FunctionComponent from './FunctionComponent';
 import About_app from './Pages/About_app'
 import About_author from './Pages/About_author'
 import { BrowserRouter as Deklarasi, Routes, Route } from 'react-router-dom';
-import Todos from './EventHandling/todo/Todo' 
 import Home from './EventHandling/Home'
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
     
     <div className='App'>
     {/* <FunctionComponent Users={Data}/> */} 
-    {/* <Todos /> */} 
     <Home/>
     </div>
 

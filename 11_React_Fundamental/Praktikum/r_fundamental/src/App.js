@@ -8,7 +8,7 @@ import Latihan from './Latihan';
 function App(props) {
   return (
     <> 
-    {/* <Todoapp users={dataUser}/> */}
+    <Todoapp users={dataUser}/>
 
     {/* <BrowserRouter>
       <Routes>
@@ -20,7 +20,7 @@ function App(props) {
       </Routes>
     </BrowserRouter> */} 
 
-    <Latihan Ulangtahun="Faqih" tahun="2022"/>
+    {/* <Latihan Ulangtahun="Faqih" tahun="2022"/> */}
     
     </>
   );
