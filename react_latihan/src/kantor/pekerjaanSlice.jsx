@@ -29,7 +29,7 @@ export const pekerjaanSlice = createSlice ({
             const newPekerjaan = {
                 ...action.payload
            };
-           state.pekerjaan = [...state.pekerjaan, newData] 
+           state.pekerjaan = [...state.pekerjaan,] 
         }
     }
 }) 

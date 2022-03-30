@@ -5,7 +5,7 @@ function Body (){
     return(
         <>
             <div >
-                <div className={Styles.body}> 
+                <div className="text-danger"> 
                 <h1>INI ADALAH HOME</h1>
                 
                 </div>

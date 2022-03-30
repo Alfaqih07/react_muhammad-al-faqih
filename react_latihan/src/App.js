@@ -6,12 +6,16 @@ import logo from './logo.svg';
 import './App.css';  
 import Classcomponent from './Classcomponent'; 
 import FunctionComponent from './FunctionComponent';
-// import Home from './Pages/Home'; 
+
+
+import Home from './Pages/Home'; 
 import About_app from './Pages/About_app'
 import About_author from './Pages/About_author'
 import { BrowserRouter as Deklarasi, Routes, Route } from 'react-router-dom';
+
+
 // import Home from './EventHandling/Home'  
-import Home from './Redux/Home'
+// import Home from './Redux/Home'
 import Form from './form/Form'
 
 function App() {
