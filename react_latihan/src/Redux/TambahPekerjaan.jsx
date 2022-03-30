@@ -1,6 +1,9 @@
 import { useState } from "react" 
+import { useDispatch } from "react-redux" 
+import { tambahPekerjaan } from "../kantor/pekerjaanSlice"
 
-function TambahPekerjaan (props) {  
+function TambahPekerjaan (props) {   
+    const dispatch =  useDispatch()
     const [count, setData] = useState({
         title : '', 
         completed : true
@@ -27,7 +30,7 @@ function TambahPekerjaan (props) {
                 title : count.title,
                 completed : true
             } 
-            props.tambahPekerjaan (newData);
+            dispatch(tambahPekerjaan(newData));
             setData({
                 title: '',
                 completed : true
