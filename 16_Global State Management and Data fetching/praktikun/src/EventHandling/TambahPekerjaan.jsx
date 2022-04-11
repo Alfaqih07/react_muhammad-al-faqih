@@ -1,9 +1,6 @@
 import { useState } from "react" 
-import { useDispatch } from "react-redux" 
-import { tambahPekerjaan } from "../kantor/pekerjaanSlice"
 
-function TambahPekerjaan (props) {   
-    const dispatch =  useDispatch()
+function TambahPekerjaan (props) {  
     const [count, setData] = useState({
         title : '', 
         completed : true
@@ -24,13 +21,13 @@ function TambahPekerjaan (props) {
         const formIsNotEmpty = count.title 
         if (formIsNotEmpty) { 
             // console.log (data.title)
-            const newPekerjaan = { 
+            const newData = { 
                 id : Math.floor(Math.random() * 100) +1,
                 // membuat angka random
                 title : count.title,
                 completed : true
             } 
-            dispatch(tambahPekerjaan(newPekerjaan));
+            props.tambahPekerjaan (newData);
             setData({
                 title: '',
                 completed : true
