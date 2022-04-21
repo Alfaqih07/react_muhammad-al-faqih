@@ -1,17 +1,18 @@
 import Sidebar from "./assets/Sidebar"; 
-import Body from "./assets/Body"; 
+import CSS from "./assets/CSS"; 
 import Header from './assets/Header'
 import Styles from './assets/Todos.module.css'
 
-function index (){
+function Index (){
     return  (
-    <>  
-    <Header/> 
+    <> 
+    <Header/>
     <Sidebar/> 
-    <Body/> 
+    <CSS/>
+    
     </> 
     );
 }   
 
-export default index;
+export default Index;
 

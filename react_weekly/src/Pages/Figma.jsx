@@ -1,10 +1,12 @@
 import Sidebar from "./assets/Sidebar"; 
-import Aboutauthor from "./assets/Aboutauthor"; 
+import Aboutauthor  from "./assets/Aboutauthor"; 
+import Header from './assets/Header'
 import Styles from './assets/Todos.module.css'
 
-function index (){
+function Figma (){
     return  (
     <> 
+    <Header/>
     <Sidebar/> 
     <Aboutauthor/>
     
@@ -12,5 +14,5 @@ function index (){
     );
 }   
 
-export default index;
+export default Figma;
 
