@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Index from './pages/index'
+import { BrowserRouter as Deklarasi, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return ( 
+    <div className='App'>
+    <Deklarasi>
+      <Routes>
+        {/* <Route path="/" element={</>}/> */}
+          <Route index element={<Index />} />
+          {/* <Route path="About_app" element={<About_app/>} /> */}
+          {/* <Route path="About_author" element={<About_author/>} /> */}
+          {/* <Route path="*" element={<NoPage />} /> */} 
+      </Routes>
+    </Deklarasi> 
     </div>
-  );
+  )
 }
 
 export default App;
