@@ -58,7 +58,7 @@ export default function Form (){
         if (errMsg !==""){
             alert ("Data Pendaftar Tidak Dapat di Terima")
         }else {
-            alert ('Data Pendaftar" ${data.nama}"Berhasil Diterima')
+            alert (`Data Pendaftar" ${data.nama}"Berhasil Diterima`)
         } 
         resetData()
         event.preventDefault()

@@ -1,19 +1,22 @@
+import { Navbar, Container, Nav } from "react-bootstrap"
+
+
 export default function Header (){
     return (
         <>
-        <nav class="navbar navbar-light bg-primary">
+        <Nav class="navbar avbar-light bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"/>
-            Bootstrap
+            <a class="navbar-brand text-light" href="#">
+            <img src={''} alt="" width="30" height="24" class="d-inline-block align-text-top"/>
+            Ayo Nimbang
             </a> 
             <div>
-            <a class="navbar-brand" href="#">Home</a>
-            <a class="navbar-brand" href="#">About</a>
-            <a class="navbar-brand" href="#">Contact</a> 
+            <a class="navbar-brand text-light" >Home</a>
+            <a class="navbar-brand text-light" >About</a>
+            <a class="navbar-brand text-light" >Contact</a> 
             </div>
         </div>
-        </nav>
+        </Nav>
         </>
     )
 }
