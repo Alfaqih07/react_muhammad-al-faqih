@@ -4,8 +4,8 @@ import BBlebih from './assets/BBlebih'
 
 export default function Index (){
     return (
-        <>
-        <Header/>
+        <> 
+        <Header/> 
         <BBlebih/>
         <Footer/>
         </>
