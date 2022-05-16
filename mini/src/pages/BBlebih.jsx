@@ -7,7 +7,7 @@ export default function Index (){
         <>
         <Header/>
         <BBlebih/>
-        {/* <Footer/> */}
+        <Footer/>
         </>
     )
 } 

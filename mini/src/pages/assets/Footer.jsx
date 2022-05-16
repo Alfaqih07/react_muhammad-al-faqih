@@ -8,7 +8,7 @@ export default function Footer (){
                 <div class="row">
                 {/* <!--Grid column--> */}
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">About</h5>
+                    <h5 class="text-uppercase" id="About" >About</h5>
                     <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
                     molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
@@ -16,7 +16,7 @@ export default function Footer (){
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Contact</h5>
+                    <h5 class="text-uppercase" id="Contact" >Contact</h5>
 
                     <p><i class="bi bi-house"></i> Jombang, Megaluh, Sidomulyo </p><p>
                         <i class="bi bi-envelope"></i> muhammad.alfaqih.100700@gmail.com</p>

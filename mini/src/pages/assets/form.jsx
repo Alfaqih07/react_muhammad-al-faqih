@@ -1,8 +1,12 @@
 import React, {useState } from "react";  
-import { Route } from "react-router-dom"; 
-import { Link } from "react-router-dom";
+import { BrowserRouter as Deklarasi, Routes, Route } from 'react-router-dom';
+import { Link } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom"; 
+import Berita from '../Berita' 
+// import {Redire}
 
-export default function Form (){ 
+export default function Form (){  
+    const navigate = useNavigate();
 
     const dataKosong = { 
             gender : "",
@@ -14,7 +18,8 @@ export default function Form (){
     const regex = /\d/g
     const noregex = /\d/g
 
-    const [errMsg, setErrMsg ] = useState("")
+    const [errMsg, setErrMsg ] = useState("") 
+    const [info, setInfo] = useState(``)
     const [data, setData] = useState (dataKosong)  
     
 
@@ -61,22 +66,28 @@ export default function Form (){
 
             if (data.gender === "pria") {
 
-                if (data.beratBadan > beratIdeal){
-                    alert("")
+                if (data.beratBadan > beratIdeal){ 
+                    // setInfo('anda obesitas, sedangkan berat ideal anda adalah ' +  beratIdeal  )
+                    alert("anda obesitas, sedangkan berat ideal anda adalah" +beratIdeal) 
+                    { navigate("BBlebih"); }; 
+                   
                 }else if(data.beratBadan < beratIdeal){
                     alert ('Anda kekurangan berat badan, berat ideal anda adalah ' +''+beratIdeal )
+                    { navigate("BBkurang"); };
                 } else {
-                    alert ('Selamat Berat Badan Anda Ideal')
+                    setInfo('Selamat Berat Badan Anda Ideal')
                 } 
 
             }else{ 
 
                 if (data.beratBadan > beratIdealWanita){
-                    alert ("anda obesitas, sedangkan berat ideal anda adalah" +beratIdealWanita)
+                    alert ("anda obesitas, sedangkan berat ideal anda adalah" +beratIdealWanita) 
+                    { navigate("BBlebih"); }; 
                 }else if(data.beratBadan < beratIdealWanita){
-                    alert ('anda kekurangan berat badan, berat ideal anda adalah ' +''+beratIdealWanita)
+                    alert ('anda kekurangan berat badan, berat ideal anda adalah ' +''+beratIdealWanita ) 
+                    { navigate("BBkurang"); };
                 } else {
-                    alert ('Selamat Berat Badan Anda Ideal')
+                    setInfo('Selamat Berat Badan Anda Ideal')  
                 }  
         } 
         resetData()
@@ -118,20 +129,33 @@ export default function Form (){
                 Berat Badan ? (kg)
                 <input className="form-control" type="number" placeholder="Dalam Satuan Kilogram" name="beratBadan" value={data.beratBadan} onChange={handleInput} required/>
             </label>
-            </div> 
+            </div>  
+            <span style={{color:"red"}} >
+                {info}
+            </span>
 
-            <span style={{color:"red"}}>{errMsg}</span><br/>
-            <div className="justify-content-center">
-            <button className="btn btn-success" style={{marginRight:"10px", background:"green"}} onClick={handleSubmit}>Hitung</button> 
+            <span style={{color:"red"}}>{errMsg}</span><br/> 
+
+            <div className="justify-content-center mt-3">
+            <button className="btn btn-success" style={{marginRight:"20px", background:"green"}} onClick={handleSubmit}>Hitung</button> 
             <button className="btn btn-danger" style={{}} onClick={resetData} >Reset</button>
-            </div>
+            </div> 
+            <div className="justify-content-center mt-3">
+
+             </div>
         </form>  
         </div> 
         <div className="d-grid gap-2 col-6 mx-auto"> 
            
-                    <Link to = "Berita"><button type="button" class="btn btn-outline-danger mb-3 " ><Link to='BBlebih'/>Anda Kelebihan Berat Badan Atau Obesitas ? Klik Tombol Ini Untuk Mendapatkan Tipsnya</button></Link>
-                    <button type="button" class="btn btn-outline-secondary mb-3" ><Link to='BBkurang'/>Anda Kekurangan Berat Badan ? Klik Tombol Ini Untuk Mendapatkan Tipsnya</button>
-                    <button type="button" class="btn btn-outline-success mb-3"><Link to='Berita'/>Berat Badan Anda Ideal ? Klik Tombol Ini Untuk Mendapatkan Tips Kesehatan Lainnya</button>
+                    <Link to = "BBlebih"><button type="button" class="btn btn-outline-danger mb-3 " >
+                        Anda Kelebihan Berat Badan Atau Obesitas ? Klik Tombol Ini Untuk Mendapatkan Tipsnya
+                        </button></Link>
+                    <Link to = "BBkurang"><button type="button" class="btn btn-outline-secondary mb-3" >
+                        Anda Kekurangan Berat Badan ? Klik Tombol Ini Untuk Mendapatkan Tipsnya
+                        </button></Link>
+                    <Link to = "Berita"><button type="button" class="btn btn-outline-success mb-3">
+                        Berat Badan Anda Ideal ? Klik Tombol Ini Untuk Mendapatkan Tips Kesehatan Lainnya
+                        </button></Link>
         </div>
         
   </div> 

@@ -1,5 +1,5 @@
-import { Navbar, Container, Nav } from "react-bootstrap"
-
+import { Navbar, Container, Nav } from "react-bootstrap" 
+import { Link } from "react-router-dom"
 
 export default function Header (){
     return (
@@ -7,13 +7,13 @@ export default function Header (){
         <Nav class="navbar avbar-light bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="#">
-            <img src={''} alt="" width="30" height="24" class="d-inline-block align-text-top"/>
-            Ayo Nimbang
+            <i className="bi bi-speedometer2"/>
+             Ayo Nimbang
             </a> 
             <div>
-            <a class="navbar-brand text-light" >Home</a>
-            <a class="navbar-brand text-light" >About</a>
-            <a class="navbar-brand text-light" >Contact</a> 
+            <Link to="/"> <a class="navbar-brand text-light" > Home </a></Link>
+            <a class="navbar-brand text-light" href="#About">About</a>
+            <a class="navbar-brand text-light" href="#Contact">Contact</a> 
             </div>
         </div>
         </Nav>

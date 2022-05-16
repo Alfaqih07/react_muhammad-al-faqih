@@ -1,4 +1,5 @@
-import axios from 'axios'
+import axios from 'axios' 
+import { Link } from 'react-router-dom'
 import {useEffect, useState} from 'react'
 
 export default function Berita (){ 
@@ -25,8 +26,7 @@ export default function Berita (){
                 <img src={result.media_url} className="card-img-top bg-dark" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">{result.title}</h5>
-                    <p className="card-text">Published : {result.updated_at}</p>
-                    <a className="btn btn-primary" value={result.id} >Baca Artikel</a>
+                    <Link to='detail'><a className="btn btn-primary" value={result.id} >Baca Artikel</a></Link>
                 </div>
             </div>
              )
