@@ -92,7 +92,7 @@ export default function Form (props){
         event.preventDefault() 
     }  
     const resetData = ()=> {
-        // setData (dataKosong); 
+        setData (dataKosong); 
         setErrMsg ("") 
         // setInfo("")
     } 
