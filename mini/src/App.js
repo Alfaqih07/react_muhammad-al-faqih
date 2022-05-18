@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Index from './pages/index'
+import Index from './pages/Index'
 import BBlebih from './pages/BBlebih' 
 import BBkurang from './pages/BBkurang'
-import Artikel from './pages/Berita'
+import Artikel from './pages/Artikel'
 import { BrowserRouter as Deklarasi, Routes, Route } from 'react-router-dom'; 
 
 function App() {

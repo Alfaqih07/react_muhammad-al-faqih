@@ -1,8 +1,13 @@
 import axios from 'axios' 
 import { Link } from 'react-router-dom'
-import {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react' 
+import { useNavigate } from "react-router";
 
-export default function Berita (){ 
+
+export default function Berita (){  
+    const navigate = useNavigate(); 
+    const Kembali = () => { { navigate("/");} }
+
     const [berita, setBerita] = useState([])
     useEffect(() => {
         axios.get(`https://fsw-api-grup4.herokuapp.com/api/v1/articles`)
@@ -15,7 +20,7 @@ export default function Berita (){
 
     return ( 
          
-        <div className='row justify-content-center p-0-5-0-0'> 
+        <div className='row justify-content-center py-3'> 
             <div> 
                 <h1>Artikel Terkait Kesehatan</h1>
             </div> 
@@ -30,7 +35,11 @@ export default function Berita (){
                 </div>
             </div>
              )
-         })}
+         })} 
+
+        <div className="mb-4">
+            <button class="btn btn-primary btn-lg fixed" type="button" onClick={Kembali}><i className="bi bi-arrow-left-circle" /> Kembali</button> 
+        </div>
              
         </div>
     )

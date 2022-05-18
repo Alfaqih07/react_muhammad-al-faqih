@@ -1,16 +1,12 @@
-import Header from './assets/Header'
+import Header from './assets/Navbar'
 import Footer from './assets/Footer'
-import Body from './assets/form' 
-import Berita from './assets/Berita' 
-import "./assets/css/style.css"
-
+import Body from './assets/Form'
 export default function Index (){
     return (
-        <>
+        <> 
+        
         <Header/> 
-        <div className='.background'>
         <Body/> 
-        </div>
         <Footer/>
         </>
     )

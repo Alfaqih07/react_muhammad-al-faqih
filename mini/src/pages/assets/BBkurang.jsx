@@ -1,5 +1,5 @@
 import { gql, useQuery } from "@apollo/client" 
-import Loading from './loading'; 
+import Loading from './Loading'; 
 import Gambar from './gambar/kurus.jpg' 
 import { useNavigate } from "react-router";
 
@@ -32,7 +32,7 @@ const Kembali = (event) => { { navigate("/");} }
 
     return(
        
-        <div className='row justify-content-center  mt-5 mb-3 py-2 '>
+        <div className='row justify-content-center  py-3'>
             <div className="mb-3"> 
                 <h1>Tips Menurunkan Berat Badan</h1>
             </div> 
@@ -44,9 +44,8 @@ const Kembali = (event) => { { navigate("/");} }
                 </div> 
                 <div class="">
                 {data?.BBkurang.map ((tips,id) => (
-                     
                      <div class="card-body"  key={id}>
-                         <h5 class="card-title bi bi-check2-circle"> {tips.tips}</h5>
+                         <h5 class="card-title bi bi-check2-circle">{tips.tips}</h5>
                          <p class="card-text">{tips.keterangan}</p>
                      </div>
                 ) 

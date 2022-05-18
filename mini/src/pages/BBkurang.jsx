@@ -1,4 +1,4 @@
-import Header from './assets/Header'
+import Header from './assets/Navbar'
 import Footer from './assets/Footer'
 import BBkurang from './assets/BBkurang'
 

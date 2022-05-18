@@ -10,9 +10,9 @@ export default function Footer (){
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
                     <h5 class="text-uppercase" id="About" >About</h5>
                     <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                    molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-                    aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    Gunakan kalkulator ini untuk memeriksa apakah berat badan Anda ideal atau tidak. 
+                    Dikarenakan apabilah anda memiliki berat badan yang berlebih maka sangat rentan mengalami gangguan kesehatan,
+                    seperti Diabetes, Kolesterol, hingga serangan jantung.
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-end">
@@ -25,9 +25,9 @@ export default function Footer (){
                 </div>
             </div>
 
-            <div class="text-center p-3" style={{backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
+            <div class="text-center text-light p-3" style={{backgroundColor: '#05445E'}}>
                 © 2022 Copyright:
-                <a class="text-dark" href="">Kalkulator.Ideal.com</a>
+                <a class="text-light" href="">Kalkulator.Ideal.com</a>
             </div>
             {/* <!-- Copyright --> */}
         </footer> 
