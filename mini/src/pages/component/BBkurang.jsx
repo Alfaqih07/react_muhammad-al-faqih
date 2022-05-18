@@ -32,7 +32,7 @@ const Kembali = (event) => { { navigate("/");} }
 
     return(
        
-        <div className='row justify-content-center  py-3'>
+        <div className='row container-fluid justify-content-center  py-3'>
             <div className="mb-3"> 
                 <h1>Tips Menurunkan Berat Badan</h1>
             </div> 

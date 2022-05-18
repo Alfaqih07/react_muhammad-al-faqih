@@ -1,6 +1,6 @@
-import Header from './assets/Navbar'
-import Footer from './assets/Footer'
-import Berita from './assets/Artikel'
+import Header from './component/Navbar'
+import Footer from './component/Footer'
+import Berita from './component/Artikel'
 
 export default function Index (){
     return (

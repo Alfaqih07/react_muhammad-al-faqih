@@ -20,7 +20,7 @@ export default function Berita (){
 
     return ( 
          
-        <div className='row justify-content-center py-3'> 
+        <div className='container-fluid row justify-content-center py-3'> 
             <div> 
                 <h1>Artikel Terkait Kesehatan</h1>
             </div> 

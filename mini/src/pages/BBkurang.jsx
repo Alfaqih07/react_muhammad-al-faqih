@@ -1,6 +1,6 @@
-import Header from './assets/Navbar'
-import Footer from './assets/Footer'
-import BBkurang from './assets/BBkurang'
+import Header from './component/Navbar'
+import Footer from './component/Footer'
+import BBkurang from './component/BBkurang'
 
 export default function Index (){
     return (

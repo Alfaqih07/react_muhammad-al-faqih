@@ -10,7 +10,8 @@ import client from './apollo/apollo-client'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
-  <ApolloProvider client={client}>
+  <ApolloProvider client={client}> 
+  {/*menghubungkan Apollo */}
   <React.StrictMode>
     <App />
   </React.StrictMode> 

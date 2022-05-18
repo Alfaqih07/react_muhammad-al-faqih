@@ -88,11 +88,11 @@ export default function Form (props){
         } 
         resetData()
     }
-        console.log (data)
+        // console.log (data)
         event.preventDefault() 
     }  
     const resetData = ()=> {
-        setData (dataKosong); 
+        // setData (dataKosong); 
         setErrMsg ("") 
         // setInfo("")
     } 
