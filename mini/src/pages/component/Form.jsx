@@ -94,9 +94,10 @@ export default function Form (props){
     const resetData = ()=> {
         setData (dataKosong); 
         setErrMsg ("") 
-        // setInfo("")
     } 
     const resetInfo =()=>{
+        setData (dataKosong); 
+        setErrMsg ("")
         setInfo("")
     }
 
@@ -148,7 +149,7 @@ export default function Form (props){
 
             <div className="justify-content-center mt-3">
                 <button className="btn btn-success" style={{marginRight:"20px", background:"green"}} onClick={handleSubmit}>Hitung</button> 
-                <button className="btn btn-danger" style={{}} onClick={resetData} >Reset</button>
+                <button className="btn btn-danger" style={{}} onClick={resetInfo} >Reset</button>
             </div> 
         </form>  
         </div>  

@@ -15,7 +15,7 @@ const GetTips = gql`
                 `
 
 
-export default function BBlebih (props){   
+export default function BBlebih (){   
     
 
     
@@ -36,7 +36,7 @@ const Kembali = () => { { navigate("/");} }
        
         <div className='container-fluid row justify-content-center  py-3'>
             <div className="mb-3"> 
-                <h1>Tips Menurunkan Berat Badan</h1>
+                <h1>Tips Menaikan Berat Badan</h1>
             </div> 
             <hr />
         <div class="card" style={{maxWidth: "800px"}}>
